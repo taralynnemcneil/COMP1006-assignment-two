@@ -1,0 +1,7 @@
+USE gc200197303;
+
+CREATE TABLE tlmUsers (
+project_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(50),
+password CHAR(128)
+);
