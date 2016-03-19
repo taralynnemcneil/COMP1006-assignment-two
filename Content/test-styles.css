@@ -1,0 +1,93 @@
+@import url('http://fonts.googleapis.com/css?family=Lato:300');
+@import url('http://weloveiconfonts.com/api/?family=fontawesome');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    font: 1em/1 Lato, sans-serif;
+    color: #777;
+    background: #555;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    margin: 0 0 20px;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 30px;
+    color: #aaa;
+}
+
+#sidebar {
+    position: absolute;
+    width: 260px;
+}
+
+#sidebar ul {
+    padding: 20px;
+    list-style: none;
+}
+
+#sidebar li a {
+    display: block;
+    padding: 20px;
+    color: #fff;
+}
+
+#sidebar li:not(:last-child) a {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#content {
+    flex: 1;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    transform: translate3d(0,0,0);
+    transition: transform .3s;
+}
+
+#content.isOpen {
+    transform: translate3d(260px,0,0);
+}
+
+#header {
+    height: 50px;
+    margin: -30px -30px 30px -30px;
+    background: #579;
+}
+
+#button {
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    transition: background .3s;
+}
+
+#button:before {
+    content:"\f0c9";
+    font: 28px/50px 'FontAwesome';
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,.25);
+}
+
+#button.active {
+    background: rgba(0,0,0,.5);
+}

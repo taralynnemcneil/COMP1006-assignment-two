@@ -2,13 +2,12 @@
 
 // authentication
 require('tlm-authentication.php');
+// set title
+$pageTitle = 'TLM Project Management | Manage Projects';
+require('tlm-header.php');
 
 try {
-    // set title
-    $pageTitle = 'TLM Project Management | Manage Projects';
-    require('tlm-header.php');
-
-    // connect to he database
+    // connect to the database
     require('tlm-db.php');
 
     // initialize an empty id variable
@@ -53,7 +52,7 @@ try {
     }
     ?>
 
-    <h1>Manage Projects</h1>
+    <h2>Manage Projects</h2>
     <p>* Indicates Required Fields</p>
 
     <form method="post" action="tlm-save-projects.php">

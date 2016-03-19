@@ -1,0 +1,191 @@
+/* ================================
+    Common on all pages
+================================ */
+
+/* Normalize */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #1c1b1d;
+}
+
+html, body {
+    height: 100vh;
+}
+
+/* Standard Body Styles */
+body {
+    display: flex;
+    color: #1c1b1d;
+    background: #f1f2f2;
+    font-family: Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 300;
+    /* keeps the nav hidden */
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arcon, Montserrat, Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+}
+
+h2 {
+    margin: 0 0 20px;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+/* Sidebar Nav Styles */
+
+#sidebar {
+    position: absolute;
+    width: 260px;
+    background-color: #469fbd;
+    height: 100vh;
+}
+
+#sidebar ul {
+    padding: 20px;
+    list-style: none;
+}
+
+#sidebar li a {
+    display: block;
+    padding: 20px;
+    color: #1c1b1d;
+}
+
+#sidebar li:not(:last-child) a {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* sidebar nav button styles */
+#button {
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    transition: background .3s;
+}
+
+#button:before {
+    content:"\f0c9";
+    font: 28px/50px 'FontAwesome';
+    color: #f1f2f2;
+}
+
+#button:hover {
+    cursor: pointer;
+    background: #469fbd;
+
+}
+
+#button.active {
+    background: #469fbd;
+}
+
+/* universal content styles */
+#content {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background: #f1f2f2;
+    transform: translate3d(0,0,0);
+    transition: transform .3s;
+    display: flex;
+    flex-direction: column;
+}
+
+#content.isOpen {
+    transform: translate3d(260px,0,0);
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50px;
+    margin: -30px -30px 0 -30px;
+    background-color: #1c1b1d;
+    flex: 0 0 auto;
+}
+
+/* Logo Styles */
+header > h1 > a {
+    display: flex;
+    align-items: flex-end;
+    font-family: Arcon, Arcon, Montserrat, Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+    font-size: .75em;
+    color: #f1f2f2;
+}
+
+header > h1 > a > img {
+    margin-right: 20px;
+    width: 100px;
+}
+
+/* Top Nav Styles */
+nav#top-nav > ul {
+    display: flex;
+}
+
+nav#top-nav > ul > li > a {
+    color: #f1f2f2;
+    padding: 10px 20px;
+}
+
+nav#top-nav > ul > li > a:hover {
+    color: #469fbd;
+}
+
+
+/* main section styles */
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    position: relative;
+    overflow-y: auto;
+    padding: 30px 10px;
+    margin-bottom: 30px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1c1b1d;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    margin: -30px -30px -30px -30px;
+    flex: 0 0 auto;
+}
+
+/* social media icons */
+footer > section#social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer > section#social > a > img {
+    width: 60%;
+}
+
+/* copy right section */
+footer > section#copy {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+footer > section#copy > p {
+    color: #f1f2f2;
+}

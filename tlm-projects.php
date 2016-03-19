@@ -8,7 +8,7 @@ $pageTitle = 'TLM Project Management | Project Details';
 require('tlm-header.php');
 ?>
 
-<h1>Project Details</h1>
+<h2>Project Details</h2>
 
 <?php
 
@@ -50,7 +50,10 @@ try {
 
     // close table
     echo '</tbody></table>';
+    ?>
 
+
+    <?php
 }
 catch (Exception $e) {
     // send ourselves the error

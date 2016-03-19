@@ -1,3 +1,10 @@
-/**
- * Created by Tara on 2016-03-16.
- */
+(function() {
+
+    /* side nav transitions */
+
+    $('#button').on('click', function() {
+        $('#content').toggleClass('isOpen');
+        $(this).toggleClass('active');
+    });
+
+})();

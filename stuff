@@ -1,0 +1,65 @@
+  <header>
+        <h1><a href="tlm-home.php" title="TLM Project Management"><img src="Content/images/coloured-logo.svg" alt="TLM logo">TLM Project Management</a></h1>
+        <nav id="top-nav">
+            <ul>
+                <li><a href="tlm-register.php" title="Register">Register</a></li>
+                <li><a href="tlm-login.php" title="Login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="nav-side">
+        <ul>
+            <li><a href="tlm-home.php" title="Home">Home</a>
+            <li><a href="tlm-manage-projects.php" title="New Project">New&nbsp;Project</a></li>
+            <li><a href="tlm-projects.php" title="All Projects">All&nbsp;Projects</a></li>
+            <li><a href="tlm-users.php" title="Users">Users</a></li>
+        </ul>
+        <a href="#" class="nav-toggle nav-open"></a>
+    </nav>
+
+
+
+
+
+
+
+    //////////
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0 20px 40px;
+        background-color: #1c1b1d;
+        align-items: center;
+        flex-wrap: wrap;
+        flex: 0 0 auto;
+    }
+
+    /* logo styles */
+
+    header > h1 > a {
+        display: flex;
+        align-items: flex-end;
+        font-family: Arcon, Arcon, Montserrat, Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+        font-size: .75em;
+        color: #f1f2f2;
+    }
+
+    header > h1 > a > img {
+        margin-right: 20px;
+        width: 100px;
+    }
+
+    /* top nav styles */
+    nav#top-nav > ul {
+        display: flex;
+    }
+
+    nav#top-nav > ul > li > a {
+        color: #f1f2f2;
+        padding: 10px 20px;
+    }
+
+    nav#top-nav > ul > li > a:hover {
+        color: #469fbd;
+    }
